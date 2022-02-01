@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+</head>
+<body>
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong>{{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>    
+    </button>    
+    </div>
+    {% endfor %}
+    <h1>Sign up to my Project !!</h1>
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <div class="box">
+        <label for="">Username :</label>
+        <input type="text" id="username" name="username" placeholder="" required>
+        </div>
+        <div class="box">
+        <label for="">First name :</label>
+        <input type="text" id="fname" name="fname" placeholder="" required>
+        </div>
+       <div class="box">
+        <label for="">Last name :</label>
+        <input type="text" id="lname" name="lname" placeholder="" required>
+        </div>
+        <div class="box">
+        <label for="">Email :</label>
+        <input type="text" id="email" name="email" placeholder="" required>
+        </div>
+        <div class="box">
+        <label for="">Password :</label>
+        <input type="text" id="pass1" name="pass1" placeholder="" required>
+        </div>
+        <div class="box">
+        <label for="">Confirm your Password :</label>
+        <input type="text" id="pass2" name="pass2" placeholder="" required>
+        </div>
+        <div class="btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

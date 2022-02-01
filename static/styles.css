@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: red;
+    padding: 10vh 0;
+}
+.btn button{
+    margin: 0 5vw;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: red;
+}
+.btn a{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+

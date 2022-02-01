@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    color: red;
+    position: absolute;
+    top: 10vh;
+    font-size: 36px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    background-color: rgb(230, 216, 216);
+    padding: 40px;
+    border-radius: 20px;
+}
+.box label{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.box input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+    text-align: center;
+    font-size: 18px;
+}
+.btn{
+    align-self: center;
+}
+.btn button{
+    margin: 0 5vw;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: red;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
