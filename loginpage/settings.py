@@ -27,7 +27,7 @@ EMAIL_PORT = EMAIL_PORT
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--$*=&6!hj^+()2sz_mzg+b9j8k$*)21o%h*6wrp2lv#a!5z!&!'
+SECRET_KEY = 'use your security key here'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
